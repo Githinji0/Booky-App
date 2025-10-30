@@ -49,7 +49,34 @@ function App() {
     setDescription("")
 
   }
-  const updateTitle = async () => {}
+  const updateTitle = async (pk) => {
+    try{
+      const response = await fetch(`http://127.0.0.1:8000/api/books/${pk}/`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ title: newTitle })
+      })
+      const data = await response.json()
+      console.log("Updated book:", data)
+      setBooks((prevBooks) =>
+        prevBooks.map((book) => (book.id === pk ? { ...book, title: newTitle } : book))
+      )
+    } catch (error) {
+      console.error("Error updating book:", error)
+    }
+  }
+  const deleteBook = async (pk) => {
+    try {
+      await fetch(`http://127.0.0.1:8000/api/books/${pk}/`, {
+        method: "DELETE"
+      })
+      setBooks((prevBooks) => prevBooks.filter((book) => book.id !== pk))
+    } catch (error) {
+      console.error("Error deleting book:", error)
+    }
+  }
 
   return (
     <>
@@ -77,6 +104,7 @@ function App() {
               </div>
               <h3>by {book.author} ({book.year})</h3>
               <p><strong>Desc:</strong> {book.description}</p>
+              <button onClick={() => deleteBook(book.id)}>Delete Book</button>
             </div>
 
           ))
