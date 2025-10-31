@@ -1,6 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import Register from './Register';
  const Login = () => {
     const [userName, setUserName] = useState("")
     const [password, setPassword] = useState("");
@@ -8,8 +10,8 @@ import { Link } from 'react-router-dom';
     return (
         <div className="box">
             <h1>Login</h1>
-            <form action="" method="POST">
-                <input type="text" placeholder="first name.." value={userName} onChange={(e) => setUserName(e.target.value)} />
+            <form action="" method="POST" className='form-box'>
+                <input type="text" placeholder="Username.." value={userName} onChange={(e) => setUserName(e.target.value)} />
                 <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 <button type="submit" onClick={() => loginUser()}>Login</button>
             </form>

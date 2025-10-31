@@ -26,13 +26,11 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 100%;
   min-height: 100vh;
-
   padding: 2em;
   box-sizing: border-box;
   flex-direction: column;
-
   gap: 1.5em;
 }
 
@@ -103,8 +101,36 @@ input, textarea {
   align-items: center;
   gap: 1em;
 }
-
-
+.form-box{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+nav{
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em ;
+  border-radius: 8px;
+}
+nav div{
+  display: flex;
+  gap: 1em;
+  color: #ffffff;
+}
+nav h1{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+nav div a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav div a:hover{
+  color: #747bff;
+}
 
 
 
