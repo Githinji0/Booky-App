@@ -10,7 +10,7 @@ export const Navbar = () => {
         <h1>Booky App</h1>
         <div className="bg-red-400 ">
             <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+            <Link to="/create">New</Link>
             <Link to="/profile">Profile</Link>
 
         </div>
