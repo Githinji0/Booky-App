@@ -24,6 +24,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -72,6 +88,15 @@
         "documentation": {}
     },
     {
+        "label": "rest_framework",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -81,6 +106,14 @@
     },
     {
         "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -128,11 +161,43 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "api_view",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
         "isExtraImport": true,
         "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
@@ -169,6 +234,38 @@
         "documentation": {}
     },
     {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -177,11 +274,35 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
         "documentation": {}
     },
     {
@@ -383,6 +504,15 @@
         "documentation": {}
     },
     {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "backend.booky_backend.settings",
+        "description": "backend.booky_backend.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework.authentication.SessionAuthentication',\n        'rest_framework.authentication.BasicAuthentication',\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n}\n# Internationalization\n# https://docs.djangoproject.com/en/5.2/topics/i18n/\nLANGUAGE_CODE = \"en-us\"",
+        "detail": "backend.booky_backend.settings",
+        "documentation": {}
+    },
+    {
         "label": "LANGUAGE_CODE",
         "kind": 5,
         "importPath": "backend.booky_backend.settings",
@@ -450,7 +580,7 @@
         "kind": 5,
         "importPath": "backend.booky_backend.urls",
         "description": "backend.booky_backend.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('api.urls')),\n    path('users/', include('users.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('api.urls')),\n    path('users/', include('users.urls')),\n    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),\n    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n]",
         "detail": "backend.booky_backend.urls",
         "documentation": {}
     },
@@ -461,6 +591,15 @@
         "description": "backend.booky_backend.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "backend.booky_backend.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.users.migrations.0001_initial",
+        "description": "backend.users.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('username', models.CharField(max_length=150, unique=True)),",
+        "detail": "backend.users.migrations.0001_initial",
         "documentation": {}
     },
     {
@@ -479,6 +618,51 @@
         "description": "backend.users.models",
         "peekOfCode": "class User(models.Model):\n    username = models.CharField(max_length=150, unique=True)\n    email = models.EmailField(unique=True)\n    first_name = models.CharField(max_length=30, blank=True)\n    last_name = models.CharField(max_length=30, blank=True)\n    date_joined = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.username",
         "detail": "backend.users.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "backend.users.serializers",
+        "description": "backend.users.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'username', 'email']\nclass RegisterSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'username', 'email', 'password']\n        extra_kwargs = {'password': {'write_only': True}}\n    def create(self, validated_data):",
+        "detail": "backend.users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterSerializer",
+        "kind": 6,
+        "importPath": "backend.users.serializers",
+        "description": "backend.users.serializers",
+        "peekOfCode": "class RegisterSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ['id', 'username', 'email', 'password']\n        extra_kwargs = {'password': {'write_only': True}}\n    def create(self, validated_data):\n        user = User.objects.create_user(\n            username=validated_data['username'],\n            email=validated_data['email'],\n            password=validated_data['password']",
+        "detail": "backend.users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend.users.urls",
+        "description": "backend.users.urls",
+        "peekOfCode": "urlpatterns = [\n    path('register/', views.createUser, name='register'),\n    path('profile/', views.getUserProfile, name='profile'),\n    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),\n    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n]",
+        "detail": "backend.users.urls",
+        "documentation": {}
+    },
+    {
+        "label": "getUserProfile",
+        "kind": 2,
+        "importPath": "backend.users.views",
+        "description": "backend.users.views",
+        "peekOfCode": "def getUserProfile(request):\n    user = request.user\n    serializer = UserSerializer(user)\n    return Response(serializer.data)\n@api_view(['POST'])#crete new user\n@permission_classes([AllowAny]) # Allow any user (authenticated or not) to access this view\ndef createUser(request):\n    serializer = RegisterSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()",
+        "detail": "backend.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "createUser",
+        "kind": 2,
+        "importPath": "backend.users.views",
+        "description": "backend.users.views",
+        "peekOfCode": "def createUser(request):\n    serializer = RegisterSerializer(data=request.data)\n    if serializer.is_valid():\n        serializer.save()\n        return Response(serializer.data, status=201)\n    return Response(serializer.errors, status=400)",
+        "detail": "backend.users.views",
         "documentation": {}
     },
     {
